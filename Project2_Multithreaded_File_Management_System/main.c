@@ -23,7 +23,7 @@ int main() {
     while(run){
 
         printf("\nMenu: \n");
-        printf("1. Concurrent File Reading.\n2. Exclusive File Writing.\n3. File Copying.\n4. File Renaming.\n5. File Deletion.\n6. File Metadata Display.\n0. Exit\n");
+        printf("1. Concurrent File Reading.\n2. Exclusive File Writing.\n3. File Copying.\n4. File Renaming.\n5. File Deletion.\n6. File Metadata Display.\n7. Compression.\n8. Decompression\n0. Exit\n");
 
         printf("\nEnter the Choice: ");
         scanf("%d", &choice);
@@ -33,7 +33,7 @@ int main() {
                 run = 0;  
                 break;
         }
-        else if (choice > -1 && choice < 7){
+        else if (choice > -1 && choice < 9){
                 pthread_t threads[5];
 
             for (int i = 0; i < 5; i++) {

@@ -68,5 +68,16 @@ void* perform_operations(void* args) {
         sem_post(&file_semaphore);
     }
 
+    else if (choice == 8){
+        sem_wait(&file_semaphore);
+        decompress_file(filename);
+        sem_post(&file_semaphore);
+    }
+    else if (choice == 7){
+        sem_wait(&file_semaphore);
+        compress_file(filename);
+        sem_post(&file_semaphore);
+    }
+
     return NULL;
 }

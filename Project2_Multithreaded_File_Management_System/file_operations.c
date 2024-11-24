@@ -120,3 +120,27 @@ void delete_file() {
     }
     log_operation("Delete", filename);
 }
+
+// Compress file function
+void compress_file(const char *filename) {
+    char command[512];
+    snprintf(command, sizeof(command), "gzip %s", (char *)filename);
+    if (system(command) == 0) {
+        printf("File compressed successfully: %s\n", (char *)filename);
+        log_operation("Compress", (char *)filename);
+    } else {
+        printf("Error compressing file: %s\n", (char *)filename);
+    }
+}
+
+// Decompress file function
+void decompress_file(const char *filename) {
+    char command[512];
+    snprintf(command, sizeof(command), "gunzip %s", (char *)filename);
+    if (system(command) == 0) {
+        printf("File decompressed successfully: %s\n", (char *)filename);
+        log_operation("Decompress", (char *)filename);
+    } else {
+        printf("Error decompressing file: %s\n", (char *)filename);
+    }
+}

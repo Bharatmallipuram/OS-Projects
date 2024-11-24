@@ -17,7 +17,6 @@ This project is a multithreaded file management system written in C. It allows u
 
 ## Technologies Used
 
-- Python 3.x
 - Threading module for concurrency
 - Standard file handling libraries
 
