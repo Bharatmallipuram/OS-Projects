@@ -1,34 +1,25 @@
-INFO:root:Write on example.txt at 2024-11-08 19:13:01.072192
-INFO:root:Write on example.txt at 2024-11-08 19:13:01.084703
-INFO:root:Write on example.txt at 2024-11-08 19:13:01.095453
-INFO:root:Write on example.txt at 2024-11-08 19:13:01.103154
-INFO:root:Write on example.txt at 2024-11-08 19:13:01.110928
-INFO:root:Read on example.txt at 2024-11-08 19:13:02.084087
-INFO:root:Rename on example.txt at 2024-11-08 19:13:02.090389
-INFO:root:Copy on example_renamed.txt at 2024-11-08 19:13:02.114372
-INFO:root:Delete on example_copy.txt at 2024-11-08 19:13:02.117246
-INFO:root:Write on example.txt at 2024-11-08 19:13:50.165045
-INFO:root:Write on example.txt at 2024-11-08 19:13:50.172325
-INFO:root:Write on example.txt at 2024-11-08 19:13:50.179531
-INFO:root:Write on example.txt at 2024-11-08 19:13:50.185011
-INFO:root:Write on example.txt at 2024-11-08 19:13:50.189752
-INFO:root:Read on example.txt at 2024-11-08 19:13:51.175638
-INFO:root:Read on example.txt at 2024-11-08 19:13:51.181193
-INFO:root:Read on example.txt at 2024-11-08 19:13:51.182185
-INFO:root:Rename on example.txt at 2024-11-08 19:13:51.183877
-INFO:root:Rename on example.txt at 2024-11-08 19:13:51.184511
-INFO:root:Rename on example.txt at 2024-11-08 19:13:51.185930
-INFO:root:Read on example.txt at 2024-11-08 19:13:51.187707
-INFO:root:Read on example.txt at 2024-11-08 19:13:51.191716
-INFO:root:Copy on example_renamed.txt at 2024-11-08 19:13:51.208272
-INFO:root:Copy on example_renamed.txt at 2024-11-08 19:13:51.233047
-INFO:root:Copy on example_renamed.txt at 2024-11-08 19:13:51.257831
-INFO:root:Rename on example.txt at 2024-11-08 19:13:51.258893
-INFO:root:Rename on example.txt at 2024-11-08 19:13:51.259307
-INFO:root:Delete on example_copy.txt at 2024-11-08 19:13:51.263187
-INFO:root:Delete on example_copy.txt at 2024-11-08 19:13:51.263577
-INFO:root:Delete on example_copy.txt at 2024-11-08 19:13:51.264890
-INFO:root:Copy on example_renamed.txt at 2024-11-08 19:13:51.280459
-INFO:root:Copy on example_renamed.txt at 2024-11-08 19:13:51.298543
-INFO:root:Delete on example_copy.txt at 2024-11-08 19:13:51.302435
-INFO:root:Delete on example_copy.txt at 2024-11-08 19:13:51.304129
+Read on example.txt at Sun Nov 24 00:13:57 2024
+Read on example.txt at Sun Nov 24 00:13:57 2024
+Read on example.txt at Sun Nov 24 00:13:57 2024
+Read on example.txt at Sun Nov 24 00:13:57 2024
+Read on example.txt at Sun Nov 24 00:13:57 2024
+Write on example.txt at Sun Nov 24 00:14:14 2024
+Write on example.txt at Sun Nov 24 00:14:16 2024
+Write on example.txt at Sun Nov 24 00:14:19 2024
+Write on example.txt at Sun Nov 24 00:14:21 2024
+Write on example.txt at Sun Nov 24 00:14:23 2024
+Read on example.txt at Sun Nov 24 00:14:26 2024
+Read on example.txt at Sun Nov 24 00:14:26 2024
+Read on example.txt at Sun Nov 24 00:14:26 2024
+Read on example.txt at Sun Nov 24 00:14:26 2024
+Read on example.txt at Sun Nov 24 00:14:26 2024
+Copy on example.txt at Sun Nov 24 00:14:50 2024
+Copy on example.txt at Sun Nov 24 00:14:56 2024
+Copy on example.txt at Sun Nov 24 00:15:02 2024
+Copy on example.txt at Sun Nov 24 00:15:04 2024
+Copy on example.txt at Sun Nov 24 00:15:08 2024
+Delete on a at Sun Nov 24 00:15:15 2024
+Delete on b at Sun Nov 24 00:15:20 2024
+Delete on c at Sun Nov 24 00:15:23 2024
+Delete on a.txt at Sun Nov 24 00:15:27 2024
+Delete on g.txt at Sun Nov 24 00:15:35 2024
