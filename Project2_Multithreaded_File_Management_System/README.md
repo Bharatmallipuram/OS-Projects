@@ -61,9 +61,9 @@ The program provides a menu for users to choose operations:
 
 ## Example Operations
 **Writing data to a file (2):** Enter the data to write when prompted.<br>
-**Reading a file (1):**Displays the file content across multiple threads.<br>
+**Reading a file (1):** Displays the file content across multiple threads.<br>
 **Renaming a file (4):** Input source and target filenames.<br>
-**Copying a file (3):**Input the source and destination filenames.<br>
+**Copying a file (3):** Input the source and destination filenames.<br>
 **Deleting a file (5):** Specify the filename to delete.<br>
 **Viewing metadata (6):** Metadata such as size, permissions, and timestamps will be displayed.
 
