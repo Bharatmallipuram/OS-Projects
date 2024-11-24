@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project implements a multithreaded file management system in Python that allows users to perform various file operations concurrently. The system ensures data integrity and prevents race conditions through the use of synchronization mechanisms. Key features include concurrent file reading, exclusive file writing, file deletion, renaming, copying, and metadata display.
+This project is a multithreaded file management system written in C. It allows users to perform various file operations concurrently while ensuring data integrity and synchronization. It leverages POSIX threads (pthreads) and semaphores for concurrency control. Supported operations include file reading, writing, renaming, copying, deletion, and metadata display.
 
 ## Features
 
@@ -23,7 +23,15 @@ This project implements a multithreaded file management system in Python that al
 
 ## File Structure
 
-file_management_system/ │ ├── file_manager.py # Main file management logic ├── file_operations.py # Implementation of various file operations ├── logger.py # Logging operations ├── README.md # Project documentation └── requirements.txt
+file_management_system/
+│
+├── main.c                 # Entry point of the program
+├── file_manager.c         # Main file management logic
+├── file_operations.c      # Implementation of various file operations
+├── log_operations.c       # Logging functionality
+├── file_operations.log    # Log file for file operations
+└── Makefile               # For building the project
+
 
 ## Installation
 
@@ -42,13 +50,64 @@ file_management_system/ │ ├── file_manager.py # Main file management log
   ```
   The program will perform a series of file operations, including writing to a file, reading from it, renaming it, copying it, and deleting files. You can modify the perform_operations function in file_manager.py to customize the operations performed.
 
+## Menu Options
+The program provides a menu for users to choose operations:
+**1:** Concurrent File Reading
+**2:** Exclusive File Writing
+**3:** File Copying
+**4:** File Renaming
+**5:** File Deletion
+**6:** File Metadata Display
+**0:** Exit the program
+
+## Example Operations
+**Writing data to a file (2):** Enter the data to write when prompted.
+**Reading a file (1):**Displays the file content across multiple threads.
+**Renaming a file (4):** Input source and target filenames.
+**Copying a file (3):**Input the source and destination filenames.
+**Deleting a file (5):** Specify the filename to delete.
+**Viewing metadata (6):** Metadata such as size, permissions, and timestamps will be displayed.
+
 ## Logging
 
-All file operations are logged in file_operations.log. This log file contains timestamps and details of each operation performed.
+All file operations are logged in file_operations.log.
+Logs include the operation performed, the filename, and a timestamp.
+
+## Synchronization Approach
+Semaphores: Used for exclusive access to critical sections, such as writing, renaming, copying, and deletion.
+Read-Write Locks: Allows multiple threads to read simultaneously but provides exclusive access for writing.
+Shared Variables: Protected using semaphores to ensure consistency when tracking read counts.
 
 ## Error Handling
 
-The program includes robust error handling to manage issues such as file not found, permission errors, and other exceptions that may arise during file operations.
+The program ensures graceful handling of common errors such as:
+
+File not found
+Permission issues
+Invalid input
+
+
+## Building and Running with Makefile
+The Makefile simplifies the compilation process:
+```bash
+make        # Compiles the project
+make clean  # Cleans the build artifacts
+
+```
+
+## Example Execution
+Menu:
+1. Concurrent File Reading.
+2. Exclusive File Writing.
+3. File Copying.
+4. File Renaming.
+5. File Deletion.
+6. File Metadata Display.
+0. Exit
+
+Enter your choice: 1
+Read from example.txt: Sample text from file -> Thread_id: 140511256921856.
+...
 
 ## License
 
