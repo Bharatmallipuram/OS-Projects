@@ -23,14 +23,14 @@ This project is a multithreaded file management system written in C. It allows u
 
 ## File Structure
 
-file_management_system/
-│
-├── main.c                 # Entry point of the program
-├── file_manager.c         # Main file management logic
-├── file_operations.c      # Implementation of various file operations
-├── log_operations.c       # Logging functionality
-├── file_operations.log    # Log file for file operations
-└── Makefile               # For building the project
+file_management_system/<br>
+│<br>
+├── main.c                 # Entry point of the program<br>
+├── file_manager.c         # Main file management logic<br>
+├── file_operations.c      # Implementation of various file operations<br>
+├── log_operations.c       # Logging functionality<br>
+├── file_operations.log    # Log file for file operations<br>
+└── Makefile               # For building the project<br>
 
 
 ## Installation
@@ -51,30 +51,30 @@ file_management_system/
 
 - **2.Menu Options**
 The program provides a menu for users to choose operations:
-**1:** Concurrent File Reading
-**2:** Exclusive File Writing
-**3:** File Copying
-**4:** File Renaming
-**5:** File Deletion
-**6:** File Metadata Display
-**0:** Exit the program
+**1:** Concurrent File Reading<br>
+**2:** Exclusive File Writing<br>
+**3:** File Copying<br>
+**4:** File Renaming<br>
+**5:** File Deletion<br>
+**6:** File Metadata Display<br>
+**0:** Exit the program<br>
 
 ## Example Operations
-**Writing data to a file (2):** Enter the data to write when prompted.
-**Reading a file (1):**Displays the file content across multiple threads.
-**Renaming a file (4):** Input source and target filenames.
-**Copying a file (3):**Input the source and destination filenames.
-**Deleting a file (5):** Specify the filename to delete.
+**Writing data to a file (2):** Enter the data to write when prompted.<br>
+**Reading a file (1):**Displays the file content across multiple threads.<br>
+**Renaming a file (4):** Input source and target filenames.<br>
+**Copying a file (3):**Input the source and destination filenames.<br>
+**Deleting a file (5):** Specify the filename to delete.<br>
 **Viewing metadata (6):** Metadata such as size, permissions, and timestamps will be displayed.
 
 ## Logging
 
-All file operations are logged in file_operations.log.
+All file operations are logged in file_operations.log.<br>
 Logs include the operation performed, the filename, and a timestamp.
 
 ## Synchronization Approach
-Semaphores: Used for exclusive access to critical sections, such as writing, renaming, copying, and deletion.
-Read-Write Locks: Allows multiple threads to read simultaneously but provides exclusive access for writing.
+Semaphores: Used for exclusive access to critical sections, such as writing, renaming, copying, and deletion.<br>
+Read-Write Locks: Allows multiple threads to read simultaneously but provides exclusive access for writing.<br>
 Shared Variables: Protected using semaphores to ensure consistency when tracking read counts.
 
 ## Error Handling

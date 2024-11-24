@@ -51,7 +51,7 @@ void* perform_operations(void* args) {
     }
     
     else if (choice == 6){
-        display_metadata(renamed_filename);
+        display_metadata(filename);
     }
     
     else if (choice == 3){
@@ -64,7 +64,7 @@ void* perform_operations(void* args) {
     else if (choice == 5){
         // Deleting the copied file
         sem_wait(&file_semaphore);
-        delete_file(copy_filename);
+        delete_file();
         sem_post(&file_semaphore);
     }
 
