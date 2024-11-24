@@ -46,11 +46,10 @@ file_management_system/
 
 - **1.Run the program:**
   ```bash
-  python file_manager.py
+  ./file_manager
   ```
-  The program will perform a series of file operations, including writing to a file, reading from it, renaming it, copying it, and deleting files. You can modify the perform_operations function in file_manager.py to customize the operations performed.
 
-## Menu Options
+- **2.Menu Options**
 The program provides a menu for users to choose operations:
 **1:** Concurrent File Reading
 **2:** Exclusive File Writing
